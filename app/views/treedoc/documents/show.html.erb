@@ -1,8 +1,10 @@
 <section>
+  <% if request.path =~ /^faq/ %>
   <header>
     <p>This is extra view code added in <code>app/views/treedoc/documents/show.html.erb</code></p>
     <h1>Frequently Asked Questions</h1>
     <hr>
   </header>
+  <% end %>
   <%= render_document %>
 </section>
