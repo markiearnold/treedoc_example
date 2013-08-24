@@ -1,6 +1,13 @@
 TreedocExample::Application.routes.draw do
   
+  # This content is provided in app/views/faqs
+  # URLs look like /faqs/purchasing
   get '/:treedoc(/*path)' => 'treedoc/documents#show', constraints: { :treedoc => /faqs/ }
+  
+  # This content is provided through an external repo set-up as a Rails Engine
+  # See Gemfile and http://github.com/justinfrench/treedoc-content-example
+  # URLs look like /about/team
+  get '/:treedoc(/*path)' => 'treedoc/documents#show', constraints: { :treedoc => /about/ }
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

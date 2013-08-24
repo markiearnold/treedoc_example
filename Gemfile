@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 1.2'
 # Treedoc
 gem 'treedoc', :git => "git://github.com/justinfrench/treedoc.git"
 
+# An external Treedoc content repo example
+gem 'treedoc_content_example', :path => "git://github.com/justinfrench/treedoc_content_example"
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
