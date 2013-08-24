@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <p>This is your header in <code>app/views/layouts/application.html.erb</code></p>
+    <hr>
+  </header>
 
 <%= yield %>
+
+  <footer>
+    <hr>
+    <p>This is your footer in <code>app/views/layouts/application.html.erb</code></p>
+  </footer>
 
 </body>
 </html>
